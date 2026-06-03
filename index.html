@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabes Safe Travels & Airport Shuttle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="gst">GST</span>
+                <span>Gabes Safe Travels</span>
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Safe, Reliable & Comfortable Shuttle Services</h1>
+            <p>
+                Local trips and airport transfers up to 120km.
+                Travel in luxury and comfort for up to 5 passengers.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="tel:+27728454306" class="btn primary">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+
+                <a href="https://wa.me/27728454306" class="btn secondary">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+
+            <div class="card">
+                <i class="fas fa-plane"></i>
+                <h3>Airport Transfers</h3>
+                <p>
+                    Convenient and punctual airport shuttle services.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-route"></i>
+                <h3>Local Travel</h3>
+                <p>
+                    Safe transport for local destinations up to 120km.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Group Transport</h3>
+                <p>
+                    Comfortable travel for up to 5 passengers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Why Choose GST?</h2>
+            <p>
+                Gabes Safe Travels provides professional shuttle and airport
+                transfer services from Tyger Valley and surrounding areas.
+                We prioritize safety, reliability, punctuality and customer comfort.
+            </p>
+
+            <ul>
+                <li>✔ Safe & Professional Service</li>
+                <li>✔ Luxury Vehicle</li>
+                <li>✔ Airport Shuttle Specialists</li>
+                <li>✔ Affordable Rates</li>
+                <li>✔ Friendly Driver</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator">
+        <h2>Fare Calculator</h2>
+
+        <div class="calc-box">
+
+            <label for="distance">Distance (km):</label>
+            <input type="number" id="distance" placeholder="Enter distance (max 120km)" min="1" max="120">
+
+            <label for="passengers">Passengers:</label>
+            <input type="number" id="passengers" value="1" min="1" max="5">
+
+            <button onclick="calculateFare()">Calculate Fare</button>
+
+            <h3 id="result">Estimated Fare: R0</h3>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Tygervalley</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>072 845 4306</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>gabessafetravels@gmail.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Gabes Safe Travels & Airport Shuttle. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
