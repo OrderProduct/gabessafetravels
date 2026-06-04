@@ -28,15 +28,20 @@ function calculateFare() {
         return;
     }
 
+    if (passengers > 5) {
+        result.textContent = "Maximum amount of passengers is 5.";
+        return;
+    }
+
     // Basic pricing model
     const baseFare = 50;        // starting fee
     const costPerKm = 5;        // per km rate
-    const perPassengerFee = 20; // extra per passenger after 1
+    const perPassengerFee = 20; // extra 20 for 4+ passengers
 
     let fare = baseFare + (distance * costPerKm * 2);
 
-    if (passengers > 1) {
-        fare += (passengers - 1) * perPassengerFee;
+    if (passengers > 3) {
+        fare += perPassengerFee;
     }
 
     result.textContent = `Estimated Fare: R${fare.toFixed(2)}`;
