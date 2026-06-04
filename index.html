@@ -111,6 +111,16 @@
             <label for="passengers">Passengers:</label>
             <input type="number" id="passengers" value="1" min="1" max="5">
 
+            <label>
+                <input type="checkbox" id="pensioner">
+                Pensioner (15% Discount)
+            </label>
+
+            <label>
+                <input type="checkbox" id="nearby">
+                Pickup Point Within 2km of Tyger Valley
+            </label>
+
             <button onclick="calculateFare()">Calculate Fare</button>
 
             <h3 id="result">Estimated Fare: R0</h3>
