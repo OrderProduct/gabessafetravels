@@ -16,7 +16,7 @@ function calculateFare() {
     const distance = parseFloat(document.getElementById("distance").value);
     const passengers = parseInt(document.getElementById("passengers").value);
 
-    const pensioner = document.getElementById("pensioner").checked;
+    // const pensioner = document.getElementById("pensioner").checked;
     const nearby = document.getElementById("nearby").checked;
     const luggage = document.getElementById("luggage").checked;
 
@@ -55,9 +55,9 @@ function calculateFare() {
     }
 
     // Pensioner discount
-    if (pensioner) {
-        fare *= 0.85; // 15% off
-    }
+    // if (pensioner) {
+    //     fare *= 0.85; // 15% off
+    // }
 
     result.textContent = `Estimated Fare: R${fare.toFixed(2)}`;
 }
