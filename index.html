@@ -31,7 +31,7 @@
         <div class="hero-content">
             <h1>Safe, Reliable & Comfortable Shuttle Services</h1>
             <p>
-                Local trips and airport transfers up to 120km.
+                Local trips and airport transfers up to 140km.
                 Travel in luxury and comfort for up to 5 passengers.
             </p>
 
@@ -64,7 +64,7 @@
                 <i class="fas fa-route"></i>
                 <h3>Local Travel</h3>
                 <p>
-                    Safe transport for local destinations up to 120km.
+                    Safe transport for local destinations up to 140km.
                 </p>
             </div>
 
@@ -94,6 +94,8 @@
                 <li>✔ Airport Shuttle Specialists</li>
                 <li>✔ Affordable Rates</li>
                 <li>✔ Friendly Driver</li>
+                <li>✔ Door-To-Door Service</li>
+                <li>✔ Free Wi-Fi</li>
                 <li>✔ Available For Events/Functions</li>
                 <li>✔ Trailer Option Available</li>
             </ul>
@@ -106,25 +108,30 @@
         <div class="calc-box">
 
             <label for="distance">Distance (km):</label>
-            <input type="number" id="distance" placeholder="Enter distance (max 120km)" min="1" max="120">
+            <input type="number" id="distance" placeholder="Enter distance (max 140km)" min="1" max="140">
 
             <label for="passengers">Passengers:</label>
             <input type="number" id="passengers" value="1" min="1" max="5">
 
-            <label>
+            <!-- <label>
                 <input type="checkbox" id="pensioner">
                 Pensioner
-            </label>
+            </label> -->
 
             <label>
                 <input type="checkbox" id="nearby">
-                Pickup Point Within 2km of Tyger Valley
+                Pickup Point Within 8km of Tyger Valley
+            </label>
+
+            <label>
+                <input type="checkbox" id="luggage">
+                Luggage / Groceries (Does not include hand luggage)
             </label>
 
             <button onclick="calculateFare()">Calculate Fare</button>
 
             <h3 id="result">Estimated Fare: R0</h3>
-            <h4>Note: This is not the final quote</h4>
+            <h5>Note: Final pricing will be confirmed before booking and may be lower than the amount displayed.</h5>
         </div>
     </section>
 
@@ -159,5 +166,23 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Default Statcounter code for Gabes Safe Travels
+    https://orderproduct.github.io/gabessafetravels/ -->
+    <script type="text/javascript">
+        var sc_project=13278134; 
+        var sc_invisible=1; 
+        var sc_security="f25ef0a3"; 
+    </script>
+    <script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js" async>
+    </script>
+    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+        Statcounter" href="https://statcounter.com/" target="_blank"><img
+        class="statcounter" src="https://c.statcounter.com/13278134/0/f25ef0a3/1/"
+        alt="Web Analytics Made Easy - Statcounter"
+        referrerPolicy="no-referrer-when-downgrade"></a>
+    </div></noscript>
+    <!-- End of Statcounter Code -->
 </body>
 </html>
