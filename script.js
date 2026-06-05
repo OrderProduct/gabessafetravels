@@ -18,6 +18,7 @@ function calculateFare() {
 
     const pensioner = document.getElementById("pensioner").checked;
     const nearby = document.getElementById("nearby").checked;
+    const luggage = document.getElementById("luggage").checked;
 
     const result = document.getElementById("result");
 
@@ -26,8 +27,8 @@ function calculateFare() {
         return;
     }
 
-    if (distance > 120) {
-        result.textContent = "Maximum distance is 120km.";
+    if (distance > 140) {
+        result.textContent = "Maximum distance is 140km.";
         return;
     }
 
@@ -37,15 +38,20 @@ function calculateFare() {
     }
 
     // Base fare
-    let baseFare = nearby ? 10 : 50;
+    let baseFare = nearby ? 10 : 30;
 
-    const costPerKm = 5;
+    const costPerKm = 4.4;
     const perPassengerFee = 20;
+    const luggageCost = 30;
 
     let fare = baseFare + (distance * costPerKm * 2);
 
     if (passengers > 3) {
         fare += perPassengerFee;
+
+        if (luggage) {
+            fare += luggageCost;
+        }
     }
 
     // Pensioner discount
